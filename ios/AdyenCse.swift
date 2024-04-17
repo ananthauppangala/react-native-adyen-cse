@@ -30,7 +30,7 @@ class AdyenCse: NSObject {
       let encryptedCard = try CardEncryptor.encrypt(card: unencryptedCard, with: self.publicKey!)
       
       resultData = [
-        "encryptedNumber":encryptedCard.number!,
+        "encryptedCardNumber":encryptedCard.number!,
         "encryptedExpiryMonth":encryptedCard.expiryMonth!,
         "encryptedExpiryYear":encryptedCard.expiryYear!,
         "encryptedSecurityCode":encryptedCard.securityCode!,
