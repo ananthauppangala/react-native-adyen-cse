@@ -40,7 +40,7 @@ class AdyenCseModule(reactContext: ReactApplicationContext) :
       .build()
     val encryptedCard = CardEncrypter.encryptFields(unencryptedCard, publicKey!!)
     val resultMap: WritableMap = WritableNativeMap()
-    resultMap.putString("encryptedNumber", encryptedCard.encryptedCardNumber)
+    resultMap.putString("encryptedCardNumber", encryptedCard.encryptedCardNumber)
     resultMap.putString("encryptedExpiryMonth", encryptedCard.encryptedExpiryMonth)
     resultMap.putString("encryptedExpiryYear", encryptedCard.encryptedExpiryYear)
     resultMap.putString("encryptedSecurityCode", encryptedCard.encryptedSecurityCode)
